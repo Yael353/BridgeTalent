@@ -1,6 +1,8 @@
 {
     "Hero": {
-        "title": "Here you can find a professional community",
+        "titleOne": "Here you find a",
+        "titleTwo": "professional community",
         "content": "We connect talents with opportunities and build bridges between dreams and careers"
     }
+    
 }

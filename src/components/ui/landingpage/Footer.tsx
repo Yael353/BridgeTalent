@@ -9,7 +9,7 @@ const Footer = () => {
 
   useEffect(() => {
     setIsMounted(true);
-    setCurrentYear(new Date().getFullYear()); 
+    setCurrentYear(new Date().getFullYear());
   }, []);
 
   if (!isMounted) {
@@ -25,7 +25,7 @@ const Footer = () => {
           {/* Kolumn 1 */}
           <div className="space-y-5">
             <h3 className="text-2xl font-bold text-indigo-700 dark:text-indigo-400">
-              CareerConnect
+              Bridge Talent
             </h3>
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
               Gemensamt bygger vi framgångsrika karriärer och framgångsrika
@@ -170,10 +170,10 @@ const Footer = () => {
               Kontakt
             </h4>
             <address className="not-italic text-gray-600 dark:text-gray-300">
-              <p className="mb-2">CareerConnect AB</p>
+              <p className="mb-2">Bridge Talent AB</p>
               <p className="mb-2">Sveavägen 123</p>
               <p className="mb-2">113 50 Stockholm</p>
-              <p className="mb-2">info@careerconnect.se</p>
+              <p className="mb-2">info@bridgetalent.se</p>
               <p>08-123 456 78</p>
             </address>
           </div>

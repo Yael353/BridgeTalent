@@ -1,26 +1,31 @@
 "use client";
 
-// import { useTranslations } from "next-intl";
+import { useTranslations } from "next-intl";
 import { Button } from "../darkmode/button";
 
 function Hero() {
+  const t = useTranslations("Hero");
+
+
   return (
     <section className="flex justify-center h-screen py-16 md:py-24 bg-gradient-to-br from-purple-50 to-indigo-50 dark:from-gray-900 dark:to-indigo-900/20">
       <div className="w-[90%] grid grid-cols-1 lg:grid-cols-2 gap-12 items-center md:pl-10">
         {/* Textsektion med förbättrad typografi */}
         <div className="space-y-8 text-center md:text-left">
           <h1 className="text-5xl md:text-6xl font-bold text-gray-900 dark:text-white leading-tight">
-            Här hittar du en{" "}
+            {t("titleOne")} {" "}
+            {/* Här hittar du en{" "} */}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-500 dark:from-indigo-400 dark:to-purple-400">
-              professionell community
-            </span>
+              {t("titleTwo")}
+            </span> 
           </h1>
 
           <p className="text-center md:text-left text-2xl md:text-3xl text-gray-600 dark:text-gray-300 font-medium leading-relaxed max-w-2xl mx-auto md:mx-0">
-            Vi förbinder <span className="text-indigo-400">talanger</span> med{" "}
+            {t("content")}
+            {/* Vi förbinder <span className="text-indigo-400">talanger</span> med{" "}
             <span className="text-indigo-400">möjligheter</span> och bygger
             broar mellan <span className="text-indigo-400">drömmar</span> och{" "}
-            <span className="text-indigo-400">karriärer</span>.
+            <span className="text-indigo-400">karriärer</span> */}
           </p>
 
           {/* Knappar med förbättrade hover-effekter */}
