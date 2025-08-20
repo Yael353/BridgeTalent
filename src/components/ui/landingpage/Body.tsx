@@ -15,7 +15,7 @@ function Body() {
         </div>
 
         {/* Textsektion*/}
-        <div className="space-y-6">
+        <div className="space-y-6 text-center md:text-left">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white leading-tight">
             Brist på{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-sky-400 dark:from-blue-400 dark:to-sky-300">
@@ -31,7 +31,7 @@ function Body() {
             som verkligen kan växa med ert team – snabbt och enkelt.
           </p>
 
-          <button className="mt-8 px-8 py-3 bg-gradient-to-r from-blue-600 to-sky-500 text-white font-medium rounded-full shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
+          <button className="mt-8 px-8 py-3 bg-gradient-to-r sm:justify-center from-blue-600 to-sky-500 text-white font-medium rounded-full shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
             Se tillgängliga talanger
           </button>
         </div>

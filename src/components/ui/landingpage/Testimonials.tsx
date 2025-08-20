@@ -1,4 +1,4 @@
-"use client";
+
 
 import { AnimatedTestimonials } from "../ui-components/AnimatedTestimonials";
 
@@ -56,12 +56,9 @@ function Testimonials() {
   ];
 
   return (
-    <div className="flex justify-center items-center py-16 bg-gray-50 dark:bg-gray-900 h-screen">
+    <div className="flex justify-center items-center py-16 bg-gray-50 dark:bg-gray-900 min-h-screen mt-auto">
       {" "}
-      <AnimatedTestimonials
-        testimonials={testimonialsData}
-        autoplay={true}
-      />
+      <AnimatedTestimonials testimonials={testimonialsData} autoplay={true} />
     </div>
   );
 }

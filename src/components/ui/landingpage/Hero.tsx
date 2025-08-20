@@ -1,13 +1,14 @@
 "use client";
 
+// import { useTranslations } from "next-intl";
 import { Button } from "../darkmode/button";
 
 function Hero() {
   return (
     <section className="flex justify-center h-screen py-16 md:py-24 bg-gradient-to-br from-purple-50 to-indigo-50 dark:from-gray-900 dark:to-indigo-900/20">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center px-6">
+      <div className="w-[90%] grid grid-cols-1 lg:grid-cols-2 gap-12 items-center md:pl-10">
         {/* Textsektion med förbättrad typografi */}
-        <div className="space-y-8">
+        <div className="space-y-8 text-center md:text-left">
           <h1 className="text-5xl md:text-6xl font-bold text-gray-900 dark:text-white leading-tight">
             Här hittar du en{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-500 dark:from-indigo-400 dark:to-purple-400">
@@ -15,9 +16,16 @@ function Hero() {
             </span>
           </h1>
 
+          <p className="text-center md:text-left text-2xl md:text-3xl text-gray-600 dark:text-gray-300 font-medium leading-relaxed max-w-2xl mx-auto md:mx-0">
+            Vi förbinder <span className="text-indigo-400">talanger</span> med{" "}
+            <span className="text-indigo-400">möjligheter</span> och bygger
+            broar mellan <span className="text-indigo-400">drömmar</span> och{" "}
+            <span className="text-indigo-400">karriärer</span>.
+          </p>
+
           {/* Knappar med förbättrade hover-effekter */}
-          <div className="flex flex-col sm:flex-row lg:flex-col gap-4">
-            <Button className="rounded-full px-8 py-4 border-2 border-indigo-600 bg-white text-indigo-600 hover:bg-indigo-50 hover:shadow-md transition-all duration-300 font-semibold text-xl">
+          <div className="flex flex-col sm:flex-row lg:flex-col gap-4 md:max-w-md">
+            <Button className="w-full rounded-full px-8 py-4 border-2 border-indigo-600 bg-white text-indigo-600  hover:shadow-md hover:scale-105 transition-transform duration-300 font-semibold text-xl">
               Fortsätt med Google
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
                 <path
@@ -42,15 +50,18 @@ function Hero() {
                 />
               </svg>
             </Button>
-            <Button className="rounded-full px-8 py-4 bg-gradient-to-r from-indigo-600 to-purple-500 text-white hover:from-indigo-700 hover:to-purple-600 hover:shadow-lg transition-all duration-300 font-semibold text-xl">
+            <Button className="rounded-full px-8 py-4 bg-gradient-to-r from-indigo-600 to-purple-500 text-white  hover:shadow-lg hover:scale-105 transition-transform duration-300 font-semibold text-xl">
               Logga in med email
+            </Button>
+            <Button className="rounded-full px-8 py-4 border-2 border-indigo-600 bg-gradient-to-r from-indigo-200 to-purple-200 text-indigo-600 hover:shadow-md hover:scale-105 transition-transform duration-300 font-semibold text-xl">
+              Skapa ett konto
             </Button>
           </div>
         </div>
 
         {/* Bildsektion med animering */}
         <div className="relative group flex justify-center">
-          <div className="absolute -inset-2 bg-indigo-200/30 dark:bg-indigo-900/20 rounded-xl blur-md group-hover:blur-lg transition-all duration-500 group-hover:scale-105"></div>
+          <div className="absolute inset-1 bg-indigo-200/30 dark:bg-indigo-900/20 rounded-xl blur-3xl group-hover:blur-lg transition-all duration-500 group-hover:scale-105"></div>
           <img
             src="/images/heroimg.jpg"
             alt="Professionell IT-community"
