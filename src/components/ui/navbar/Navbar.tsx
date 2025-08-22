@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { ModeToggle } from "../darkmode/ModeToggle";
 import { Button } from "../darkmode/button";
 import {
@@ -11,20 +12,25 @@ import {
   X,
 } from "lucide-react";
 import { useState } from "react";
+import LocalSwithcer from "./LocalSwithcer";
+
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const t = useTranslations("Navbar");
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const navItems = [
-    { icon: <Users size={28} />, text: "Talanger" },
-    { icon: <FileSpreadsheet size={28} />, text: "Öppna roller" },
-    { icon: <Building2 size={28} />, text: "Företag" },
-    { icon: <Building2 size={28} />, text: "Rekryterare" },
-  ];
+const getNavItems = () => [
+  { icon: <Users size={28} />, text: t("talanger") },
+  { icon: <FileSpreadsheet size={28} />, text: t("roller") },
+  { icon: <Building2 size={28} />, text: t("employer") },
+  { icon: <Building2 size={28} />, text: t("rekryterare") },
+];
+
+const navItems = getNavItems();
 
   return (
     <nav className="sticky top-0 z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-700 px-6 py-3">
@@ -77,10 +83,10 @@ function Navbar() {
               variant="outline"
               className="rounded-full border-indigo-300 text-indigo-600 hover:bg-indigo-50 dark:border-indigo-700 dark:text-indigo-300 dark:hover:bg-indigo-900/30 transition-all text-sm md:text-base"
             >
-              Logga in
+              {t("loggaIn")}
             </Button>
             <Button className="rounded-full bg-gradient-to-r from-indigo-600 to-purple-500 text-white hover:from-indigo-700 hover:to-purple-600 hover:shadow-md transition-all text-sm md:text-base">
-              Skapa konto
+              {t("registrera")}
             </Button>
           </div>
 
@@ -88,6 +94,7 @@ function Navbar() {
           <div className="flex items-center">
             <div className="flex items-center ml-4 lg:ml-6 lg:pl-6 lg:border-l border-gray-400 dark:border-gray-700 gap-2">
               <ModeToggle />
+              <LocalSwithcer/>
               <Globe className="h-[2rem] w-[2rem] lg:h-[2.2rem] lg:w-[2.2rem] rounded-md bg-white text-black dark:bg-black dark:text-white p-1.5 lg:p-2 hover:bg-gray-100 dark:hover:bg-gray-800" />
             </div>
           </div>

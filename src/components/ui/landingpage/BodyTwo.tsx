@@ -1,26 +1,29 @@
+import { useTranslations } from "next-intl";
 import React from "react";
 
 function BodyTwo() {
+
+  const t = useTranslations("BodyTwo");
   return (
     <section className="h-screen py-24 px-8 bg-gradient-to-br from-purple-50 to-indigo-50 dark:from-gray-900 dark:to-indigo-900/20">
       <div className="max-w-6xl mx-auto h-full grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
         {/* Textsektion */}
         <div className="space-y-6 text-center md:text-left">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white leading-tight">
-            Redo att utnyttja din kompetens för att{" "}
+            {t("h21")}{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-sky-400 dark:from-blue-400 dark:to-sky-300">
-              skapa verklig förändring?
+              {t("h22")}
             </span>
           </h2>
-          <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 leading-relaxed">
-            Här hittar du{" "}
+          <p className="text-xl md:text-2xl text-accant-foreground leading-relaxed font-semibold">
+            {t("p1")}
             <span className="font-semibold text-blue-600 dark:text-blue-400">
-              innovativa techbolag
+              {t("p2")}
             </span>{" "}
-            som verkligen gör skillnad!
+            {t("p3")}
           </p>
-          <button className="mt-8 px-8 py-3 bg-gradient-to-r from-blue-600 to-sky-500 text-white font-medium rounded-full shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
-            Upptäck din framtida arbetsgivare!
+          <button className="mt-8 px-8 py-3 bg-gradient-to-r from-blue-600 to-sky-500 text-white font-bold rounded-full shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
+            {t("knapp")}
           </button>
         </div>
 

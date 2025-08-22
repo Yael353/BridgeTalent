@@ -1,8 +1,79 @@
 {
-    "Hero": {
-        "titleOne": "Here you find a",
-        "titleTwo": "professional community",
-        "content": "We connect talents with opportunities and build bridges between dreams and careers"
+  "Common": {
+    "switchLanguage": "Switch language"
+  },
+
+  "Hero": {
+    "titleOne": "Here you'll find a",
+    "titleTwo": "professional community",
+    "content": "We connect talents with opportunities and build bridges between dreams and careers",
+    "b1": "Continue with Google",
+    "b2": "Continue with Email",
+    "b3": "Create an account"
+  },
+
+  "Navbar": {
+    "talanger": "Talents",
+    "roller": "Open Roles",
+    "employer": "Employers",
+    "rekryterare": "Recruiters",
+    "loggaIn": "Log in",
+    "registrera": "Create Account"
+  },
+  "Body": {
+    "h21": "Searching for the next",
+    "h22": "IT-talent?",
+    "p1": "With us, you will find skilled developers, designers, and other IT specialists ready to take on new challenges.",
+    "knapp": "Find your next talent here!"
+  },
+
+  "BodyTwo": {
+    "h21": "Ready to leverage your skills and",
+    "h22": "create real change?",
+    "p1": "With us, you will find ",
+    "p2": "Innovative Tech Companies",
+    "p3": "that truly make a difference.",
+    "knapp": "Discover your future employer here!"
+  },
+
+  "Footer": {
+    "companyName": "Bridge Talent",
+    "tagline": "Together we build successful careers and successful companies",
+    "forTalents": "For Talents",
+    "forCompanies": "For Companies",
+    "contact": "Contact",
+    "talentLinks": {
+      "createProfile": "Create Profile",
+      "searchJobs": "Search Jobs",
+      "careerAdvice": "Career Advice",
+      "cvHelp": "CV Help"
+    },
+    "companyLinks": {
+      "postJobs": "Post Jobs",
+      "findTalents": "Find Talents",
+      "recruitmentTools": "Recruitment Tools",
+      "pricing": "Pricing"
+    },
+    "address": {
+      "company": "Bridge Talent AB",
+      "street": "Sveavägen 123",
+      "postalCode": "113 50 Stockholm",
+      "email": "info@bridgetalent.se",
+      "phone": "+46 8 123 456 78"
+    },
+    "bottom": {
+      "copyright": "© Bridge Talent. All rights reserved.",
+      "privacyPolicy": "Privacy Policy",
+      "termsOfService": "Terms of Service",
+      "cookiePolicy": "Cookie Policy"
+    },
+    "social": {
+      "facebook": "Visit us on Facebook",
+      "twitter": "Follow us on Twitter",
+      "linkedin": "Follow us on LinkedIn"
+    },
+    "Common": {
+      "switchLanguage": "Switch language"
     }
-    
+  }
 }

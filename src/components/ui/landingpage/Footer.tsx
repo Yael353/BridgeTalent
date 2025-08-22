@@ -1,43 +1,32 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import Link from "next/link";
-import { useState, useEffect } from "react";
 
-const Footer = () => {
-  const [isMounted, setIsMounted] = useState(false);
-  const [currentYear, setCurrentYear] = useState(2023); // Standardvärde
-
-  useEffect(() => {
-    setIsMounted(true);
-    setCurrentYear(new Date().getFullYear());
-  }, []);
-
-  if (!isMounted) {
-    return null;
-  }
+function Footer() {
+  const t = useTranslations("Footer");
+  const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-gradient-to-br bg-red  from-purple-50 to-indigo-50 dark:from-gray-900 dark:to-indigo-900/20 pt-20 pb-10 px-4">
-      {" "}
+    <footer className="bg-gradient-to-br from-purple-50 to-indigo-50 dark:from-gray-900 dark:to-indigo-900/20 md:pt-34 pb-10 px-4">
       <div className="max-w-6xl mx-auto">
         {/* Huvudinnehåll */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-16">
           {/* Kolumn 1 */}
           <div className="space-y-5">
             <h3 className="text-2xl font-bold text-indigo-700 dark:text-indigo-400">
-              Bridge Talent
+              {t("companyName")}
             </h3>
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-              Gemensamt bygger vi framgångsrika karriärer och framgångsrika
-              företag
+              {t("tagline")}
             </p>
             <div className="flex space-x-4 pt-2">
               <a
-                href="#"
+                href="https://www.facebook.com/login.php/"
                 className="text-indigo-600 hover:text-indigo-800 dark:text-indigo-400 dark:hover:text-indigo-300 transition-colors duration-300"
               >
                 <svg
-                  className="w-5 h-5"
+                  className="md:w-10 md:h-10 hover:scale-105 transition-transform duration-300"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                   aria-hidden="true"
@@ -50,24 +39,29 @@ const Footer = () => {
                 </svg>
               </a>
               <a
-                href="#"
+                href="https://x.com/"
                 className="text-indigo-600 hover:text-indigo-800 dark:text-indigo-400 dark:hover:text-indigo-300 transition-colors duration-300"
+                aria-label="Följ oss på X"
               >
                 <svg
-                  className="w-5 h-5"
+                  className="md:w-10 md:h-10 hover:scale-105 transition-transform duration-300"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                   aria-hidden="true"
                 >
-                  <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                  <path
+                    fillRule="evenodd"
+                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                    clipRule="evenodd"
+                  />
                 </svg>
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/"
                 className="text-indigo-600 hover:text-indigo-800 dark:text-indigo-400 dark:hover:text-indigo-300 transition-colors duration-300"
               >
                 <svg
-                  className="w-5 h-5"
+                  className="md:w-10 md:h-10 hover:scale-105 transition-transform duration-300"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                   aria-hidden="true"
@@ -85,7 +79,7 @@ const Footer = () => {
           {/* Kolumn 2 */}
           <div className="space-y-5">
             <h4 className="text-lg font-semibold text-gray-900 dark:text-white">
-              För Talanger
+              {t("forTalents")}
             </h4>
             <ul className="space-y-3">
               <li>
@@ -93,7 +87,7 @@ const Footer = () => {
                   href="#"
                   className="text-gray-600 hover:text-indigo-600 dark:text-gray-300 dark:hover:text-indigo-400 transition-colors duration-300"
                 >
-                  Skapa profil
+                  {t("talentLinks.createProfile")}
                 </Link>
               </li>
               <li>
@@ -101,7 +95,7 @@ const Footer = () => {
                   href="#"
                   className="text-gray-600 hover:text-indigo-600 dark:text-gray-300 dark:hover:text-indigo-400 transition-colors duration-300"
                 >
-                  Sök jobb
+                  {t("talentLinks.searchJobs")}
                 </Link>
               </li>
               <li>
@@ -109,7 +103,7 @@ const Footer = () => {
                   href="#"
                   className="text-gray-600 hover:text-indigo-600 dark:text-gray-300 dark:hover:text-indigo-400 transition-colors duration-300"
                 >
-                  Karriärrådgivning
+                  {t("talentLinks.careerAdvice")}
                 </Link>
               </li>
               <li>
@@ -117,7 +111,7 @@ const Footer = () => {
                   href="#"
                   className="text-gray-600 hover:text-indigo-600 dark:text-gray-300 dark:hover:text-indigo-400 transition-colors duration-300"
                 >
-                  CV-hjälp
+                  {t("talentLinks.cvHelp")}
                 </Link>
               </li>
             </ul>
@@ -126,7 +120,7 @@ const Footer = () => {
           {/* Kolumn 3 */}
           <div className="space-y-5">
             <h4 className="text-lg font-semibold text-gray-900 dark:text-white">
-              För Företag
+              {t("forCompanies")}
             </h4>
             <ul className="space-y-3">
               <li>
@@ -134,7 +128,7 @@ const Footer = () => {
                   href="#"
                   className="text-gray-600 hover:text-indigo-600 dark:text-gray-300 dark:hover:text-indigo-400 transition-colors duration-300"
                 >
-                  Publicera jobb
+                  {t("companyLinks.postJobs")}
                 </Link>
               </li>
               <li>
@@ -142,7 +136,7 @@ const Footer = () => {
                   href="#"
                   className="text-gray-600 hover:text-indigo-600 dark:text-gray-300 dark:hover:text-indigo-400 transition-colors duration-300"
                 >
-                  Sök talanger
+                  {t("companyLinks.findTalents")}
                 </Link>
               </li>
               <li>
@@ -150,7 +144,7 @@ const Footer = () => {
                   href="#"
                   className="text-gray-600 hover:text-indigo-600 dark:text-gray-300 dark:hover:text-indigo-400 transition-colors duration-300"
                 >
-                  Rekryteringsverktyg
+                  {t("companyLinks.recruitmentTools")}
                 </Link>
               </li>
               <li>
@@ -158,7 +152,7 @@ const Footer = () => {
                   href="#"
                   className="text-gray-600 hover:text-indigo-600 dark:text-gray-300 dark:hover:text-indigo-400 transition-colors duration-300"
                 >
-                  Prissättning
+                  {t("companyLinks.pricing")}
                 </Link>
               </li>
             </ul>
@@ -167,14 +161,14 @@ const Footer = () => {
           {/* Kolumn 4 */}
           <div className="space-y-5">
             <h4 className="text-lg font-semibold text-gray-900 dark:text-white">
-              Kontakt
+              {t("contact")}
             </h4>
             <address className="not-italic text-gray-600 dark:text-gray-300">
-              <p className="mb-2">Bridge Talent AB</p>
-              <p className="mb-2">Sveavägen 123</p>
-              <p className="mb-2">113 50 Stockholm</p>
-              <p className="mb-2">info@bridgetalent.se</p>
-              <p>08-123 456 78</p>
+              <p className="mb-2">{t("address.company")}</p>
+              <p className="mb-2">{t("address.street")}</p>
+              <p className="mb-2">{t("address.postalCode")}</p>
+              <p className="mb-2">{t("address.email")}</p>
+              <p>{t("address.phone")}</p>
             </address>
           </div>
         </div>
@@ -182,32 +176,32 @@ const Footer = () => {
         {/* Bottom section */}
         <div className="pt-8 mt-8 border-t border-gray-300 dark:border-gray-700 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-600 dark:text-gray-300 text-sm mb-4 md:mb-0">
-            © {currentYear} CareerConnect. Alla rättigheter förbehållna.
+            {t("bottom.copyright")} {currentYear}
           </p>
           <div className="flex space-x-6">
             <Link
               href="#"
               className="text-gray-600 hover:text-indigo-600 dark:text-gray-300 dark:hover:text-indigo-400 text-sm transition-colors duration-300"
             >
-              Integritetspolicy
+              {t("bottom.privacyPolicy")}
             </Link>
             <Link
               href="#"
               className="text-gray-600 hover:text-indigo-600 dark:text-gray-300 dark:hover:text-indigo-400 text-sm transition-colors duration-300"
             >
-              Användarvillkor
+              {t("bottom.termsOfService")}
             </Link>
             <Link
               href="#"
               className="text-gray-600 hover:text-indigo-600 dark:text-gray-300 dark:hover:text-indigo-400 text-sm transition-colors duration-300"
             >
-              Cookiepolicy
+              {t("bottom.cookiePolicy")}
             </Link>
           </div>
         </div>
       </div>
     </footer>
   );
-};
+}
 
 export default Footer;

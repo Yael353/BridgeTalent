@@ -1,7 +1,79 @@
 {
+  "Common": {
+    "switchLanguage": "Byt språk"
+  },
+  
   "Hero": {
     "titleOne": "Här hittar du en",
     "titleTwo": "professionell community",
-    "content": "Vi förbinder talanger med möjligheter och bygger broar mellan drömmar och karriärer"
+    "content": "Vi förbinder talanger med möjligheter och bygger broar mellan drömmar och karriärer",
+    "b1": "Fortsätt med Google",
+    "b2": "Fortsätt med E-post",
+    "b3": "Skapa ett konto"
+  },
+  "Navbar": {
+    "talanger": "Talanger",
+    "roller": "Öppna roller",
+    "employer": "Företag",
+    "rekryterare": "Rekryterare",
+
+    "loggaIn": "Logga in",
+    "registrera": "Skapa konto"
+  },
+  "Body": {
+    "h21": "Söker du efter rätt",
+    "h22": "It-kompetens?",
+    "p1": "Hos oss hittar du skickliga utvecklare, designers och andra IT-specialister som är redo att ta sig an nya utmaningar.",
+    "knapp": "Hitta din nästa talang här!"
+  },
+  "BodyTwo": {
+    "h21": "Redo att utnyttja din kompetens för att",
+    "h22": "skapa verklig förändring?",
+    "p1": "Hos oss hittar du ",
+    "p2": "Innovativa Tech-bolag",
+    "p3": "som verkligen gör skillnad.",
+    "knapp": "Upptäck din framtida arbetsgivare här!"
+  },
+
+  "Footer": {
+    "companyName": "Bridge Talent",
+    "tagline": "Gemensamt bygger vi framgångsrika karriärer och framgångsrika företag",
+    "forTalents": "För Talanger",
+    "forCompanies": "För Företag",
+    "contact": "Kontakt",
+    "talentLinks": {
+      "createProfile": "Skapa profil",
+      "searchJobs": "Sök jobb",
+      "careerAdvice": "Karriärrådgivning",
+      "cvHelp": "CV-hjälp"
+    },
+    "companyLinks": {
+      "postJobs": "Publicera jobb",
+      "findTalents": "Sök talanger",
+      "recruitmentTools": "Rekryteringsverktyg",
+      "pricing": "Prissättning"
+    },
+    "address": {
+      "company": "Bridge Talent AB",
+      "street": "Sveavägen 123",
+      "postalCode": "113 50 Stockholm",
+      "email": "info@bridgetalent.se",
+      "phone": "08-123 456 78"
+    },
+    "bottom": {
+      "copyright": "© Bridge Talent. Alla rättigheter förbehållna.",
+      "privacyPolicy": "Integritetspolicy",
+      "termsOfService": "Användarvillkor",
+      "cookiePolicy": "Cookiepolicy"
+    },
+    "social": {
+      "facebook": "Besök oss på Facebook",
+      "twitter": "Följ oss på Twitter",
+      "linkedin": "Följ oss på LinkedIn"
+    },
+
+    "Common": {
+      "switchLanguage": "Byt språk"
+    }
   }
 }
