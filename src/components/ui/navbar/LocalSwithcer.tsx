@@ -12,13 +12,11 @@ function LocalSwitcher() {
   const router = useRouter();
   const pathname = usePathname();
 
-  // Hitta nästa språk att växla till
+  
   const nextLocale =
     routing.locales.find((loc) => loc !== locale) || routing.defaultLocale;
 
-  // Funktion för att byta språk
   const switchLocale = () => {
-    // Skapa ny path med ny locale
     const newPathname = pathname.replace(`/${locale}`, `/${nextLocale}`);
     router.push(newPathname);
   };
@@ -29,7 +27,7 @@ function LocalSwitcher() {
       className="flex items-center gap-2 p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-300"
       aria-label={t("switchLanguage")}
     >
-      <Globe className="h-5 w-5 md:h-6 md:w-6" />
+      <Globe className="h-[2rem] w-[2rem] lg:h-[2.2rem] lg:w-[2.2rem] rounded-md bg-white text-black dark:bg-black dark:text-white p-1.5 lg:p-2 hover:bg-gray-100 dark:hover:bg-gray-800" />
       <span className="text-sm font-medium uppercase hidden md:block">
         {nextLocale}
       </span>

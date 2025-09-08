@@ -75,5 +75,47 @@
     "Common": {
       "switchLanguage": "Switch language"
     }
+  },
+  "Testimonials": {
+    "title": "What does our users",
+    "title2": "say about us?",
+    "subtitle": "Hear from our satisfied talents and companies who have found success through Bridge Talent.",
+    "testimonials": {
+      "petra": {
+        "quote": "Through BridgeTalent, we found our senior developer in just two weeks. The process was smooth and the candidates were high quality.",
+        "name": "Petra Lindgren",
+        "designation": "Technical Manager, Nordic Tech Solutions"
+      },
+      "marcus": {
+        "quote": "As a newly graduated developer, BridgeTalent was invaluable for getting in touch with the right employers. Got my first job thanks to them!",
+        "name": "Marcus Berg",
+        "designation": "Junior Fullstack Developer"
+      },
+      "darya": {
+        "quote": "We saved 30% on recruitment costs compared to traditional recruitment agencies. High accuracy on candidates.",
+        "name": "Darya Fakhir",
+        "designation": "HR Director, CloudInnovate"
+      },
+      "anders": {
+        "quote": "BridgeTalent's matching between our needs and candidate competencies is unbeatable. 5/5 recruitments succeeded on the first attempt.",
+        "name": "Anders Nilsson",
+        "designation": "VP Engineering, Fintech Stockholm"
+      },
+      "sara": {
+        "quote": "The platform is intuitive and saves us tons of time. We especially like the ability to directly see relevant technical skills.",
+        "name": "Sara Wikström",
+        "designation": "Recruitment Manager, AI Ventures"
+      },
+      "elizeu": {
+        "quote": "From registration to employment it only took 18 days. The fastest recruitment I've experienced in 10 years in the industry.",
+        "name": "Elizeu Dias",
+        "designation": "CTO, GreenTech Startup"
+      },
+      "oscar": {
+        "quote": "BridgeTalent's algorithms matched us with perfect candidates we hadn't even found through traditional search. Game changer!",
+        "name": "Oscar Lundqvist",
+        "designation": "Founder, TechScout AB"
+      }
+    }
   }
 }

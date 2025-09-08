@@ -46,7 +46,7 @@ export const AnimatedTestimonials = ({
     for (let i = 0; i < str.length; i++) {
       hash = str.charCodeAt(i) + ((hash << 5) - hash);
     }
-    return (hash % 20) - 10; 
+    return (hash % 20) - 10;
   };
 
   useEffect(() => {
@@ -158,7 +158,7 @@ export const AnimatedTestimonials = ({
               ))}
             </motion.p>
           </motion.div>
-          <div className="flex gap-4 pt-12 md:pt-0">
+          <div className="flex justify-center gap-4 pt-12 md:pt-0 md:justify-start">
             <button
               onClick={handlePrev}
               className="group/button flex h-7 w-7 items-center justify-center rounded-full bg-gray-100 dark:bg-neutral-800"

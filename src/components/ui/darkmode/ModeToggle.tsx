@@ -24,7 +24,7 @@ export function ModeToggle() {
       <DropdownMenuTrigger asChild>
         <Button
           variant="ghost"
-          className="bg-background"
+          className="bg-background hover:bg-ring"
           size="icon"
           onClick={toggleTheme}
         >

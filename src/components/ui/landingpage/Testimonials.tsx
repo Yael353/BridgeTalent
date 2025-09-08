@@ -1,64 +1,70 @@
-
-
+import { useTranslations } from "next-intl";
 import { AnimatedTestimonials } from "../ui-components/AnimatedTestimonials";
 
 function Testimonials() {
+  const t = useTranslations("Testimonials");
   const testimonialsData = [
     {
-      quote:
-        "Via BridgeTalent hittade vi vår seniorutvecklare på bara två veckor. Processen var smidig och kandidaterna högkvalitativa.",
-      name: "Petra Lindgren",
-      designation: "Teknisk chef, Nordic Tech Solutions",
+      quote: t("testimonials.petra.quote"),
+      name: t("testimonials.petra.name"),
+      designation: t("testimonials.petra.designation"),
       src: "/images/petra.jpg",
     },
     {
-      quote:
-        "Som nyexaminerad utvecklare var BridgeTalent ovärderliga för att komma i kontakt med rätt arbetsgivare. Fick mitt första jobb tack vare dem!",
-      name: "Marcus Berg",
-      designation: "Junior Fullstack-utvecklare",
+      quote: t("testimonials.marcus.quote"),
+      name: t("testimonials.marcus.name"),
+      designation: t("testimonials.marcus.designation"),
       src: "/images/marcus.jpg",
     },
     {
-      quote:
-        "Vi sparade 30% på rekryteringskostnader jämfört med traditionella rekryteringsbyråer. Hög träffsäkerhet på kandidaterna.",
-      name: "Darya Fakhir",
-      designation: "HR-direktör, CloudInnovate",
+      quote: t("testimonials.darya.quote"),
+      name: t("testimonials.darya.name"),
+      designation: t("testimonials.darya.designation"),
       src: "/images/darya.jpg",
     },
     {
-      quote:
-        "BridgeTalents matchning mellan våra behov och kandidaters kompetens är oslagbar. 5/5 rekryteringar lyckades på första försöket.",
-      name: "Anders Nilsson",
-      designation: "VP Engineering, Fintech Stockholm",
+      quote: t("testimonials.anders.quote"),
+      name: t("testimonials.anders.name"),
+      designation: t("testimonials.anders.designation"),
       src: "/images/anders.jpg",
     },
     {
-      quote:
-        "Plattformen är intuitiv och sparar oss massor med tid. Speciellt gillar vi möjligheten att direkt se relevanta tekniska färdigheter.",
-      name: "Sara Wikström",
-      designation: "Rekryteringsansvarig, AI Ventures",
+      quote: t("testimonials.sara.quote"),
+      name: t("testimonials.sara.name"),
+      designation: t("testimonials.sara.designation"),
       src: "/images/sara.jpg",
     },
     {
-      quote:
-        "Från registrering till anställning tog det bara 18 dagar. Snabbaste rekryteringen jag varit med om på 10 år i branschen.",
-      name: "Elizeu Dias",
-      designation: "CTO, GreenTech Startup",
+      quote: t("testimonials.elizeu.quote"),
+      name: t("testimonials.elizeu.name"),
+      designation: t("testimonials.elizeu.designation"),
       src: "/images/elizeu.jpg",
     },
     {
-      quote:
-        "BridgeTalents algoritmer matchade oss med perfekta kandidater vi inte ens hittat via traditionell sökning. Game changer!",
-      name: "Oscar Lundqvist",
-      designation: "Grundare, TechScout AB",
+      quote: t("testimonials.oscar.quote"),
+      name: t("testimonials.oscar.name"),
+      designation: t("testimonials.oscar.designation"),
       src: "/images/oscar.jpg",
     },
   ];
 
   return (
-    <div className="flex justify-center items-center py-16 bg-gray-50 dark:bg-gray-900 min-h-screen mt-auto">
-      {" "}
-      <AnimatedTestimonials testimonials={testimonialsData} autoplay={true} />
+    <div className="flex flex-col justify-between  items-center py-16 bg-gray-50 dark:bg-gray-900 min-h-screen mt-auto">
+      <div className="space-y-6 text-center mb-12 px-4">
+        <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white leading-tight">
+          {t("title")}{" "}
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-sky-400 dark:from-blue-400 dark:to-sky-300">
+            {t("title2")}
+          </span>
+        </h2>
+        <div>
+          <p className="text-xl md:text-2xl font-bold text-accent-foreground leading-relaxed ">
+            {t("subtitle")}{" "}
+          </p>
+        </div>
+      </div>
+      <AnimatedTestimonials testimonials={testimonialsData} autoplay={true} />{" "}
+      <div></div>
     </div>
   );
 }

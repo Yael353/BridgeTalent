@@ -2,7 +2,7 @@
   "Common": {
     "switchLanguage": "Byt språk"
   },
-  
+
   "Hero": {
     "titleOne": "Här hittar du en",
     "titleTwo": "professionell community",
@@ -74,6 +74,49 @@
 
     "Common": {
       "switchLanguage": "Byt språk"
+    }
+  },
+
+  "Testimonials": {
+    "title": "Vad säger våra ",
+    "title2": "användare?",
+    "subtitle": "Upptäck hur Bridge Talent har hjälpt både talanger och företag att nå sina mål genom våra användares berättelser.",
+    "testimonials": {
+      "petra": {
+        "quote": "Via BridgeTalent hittade vi vår seniorutvecklare på bara två veckor. Processen var smidig och kandidaterna högkvalitativa.",
+        "name": "Petra Lindgren",
+        "designation": "Teknisk chef, Nordic Tech Solutions"
+      },
+      "marcus": {
+        "quote": "Som nyexaminerad utvecklare var BridgeTalent ovärderliga för att komma i kontakt med rätt arbetsgivare. Fick mitt första jobb tack vare dem!",
+        "name": "Marcus Berg",
+        "designation": "Junior Fullstack-utvecklare"
+      },
+      "darya": {
+        "quote": "Vi sparade 30% på rekryteringskostnader jämfört med traditionella rekryteringsbyråer. Hög träffsäkerhet på kandidaterna.",
+        "name": "Darya Fakhir",
+        "designation": "HR-direktör, CloudInnovate"
+      },
+      "anders": {
+        "quote": "BridgeTalents matchning mellan våra behov och kandidaters kompetens är oslagbar. 5/5 rekryteringar lyckades på första försöket.",
+        "name": "Anders Nilsson",
+        "designation": "VP Engineering, Fintech Stockholm"
+      },
+      "sara": {
+        "quote": "Plattformen är intuitiv och sparar oss massor med tid. Speciellt gillar vi möjligheten att direkt se relevanta tekniska färdigheter.",
+        "name": "Sara Wikström",
+        "designation": "Rekryteringsansvarig, AI Ventures"
+      },
+      "elizeu": {
+        "quote": "Från registrering till anställning tog det bara 18 dagar. Snabbaste rekryteringen jag varit med om på 10 år i branschen.",
+        "name": "Elizeu Dias",
+        "designation": "CTO, GreenTech Startup"
+      },
+      "oscar": {
+        "quote": "BridgeTalents algoritmer matchade oss med perfekta kandidater vi inte ens hittat via traditionell sökning. Game changer!",
+        "name": "Oscar Lundqvist",
+        "designation": "Grundare, TechScout AB"
+      }
     }
   }
 }

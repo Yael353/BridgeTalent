@@ -7,7 +7,7 @@ function BodyTwo() {
   return (
     <section className="h-screen py-24 px-8 bg-gradient-to-br from-purple-50 to-indigo-50 dark:from-gray-900 dark:to-indigo-900/20">
       <div className="max-w-6xl mx-auto h-full grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
-        {/* Textsektion */}
+        {/* Text*/}
         <div className="space-y-6 text-center md:text-left">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white leading-tight">
             {t("h21")}{" "}
@@ -27,7 +27,7 @@ function BodyTwo() {
           </button>
         </div>
 
-        {/* Bildsektion (nu inom samma grid-container) */}
+        {/* Bildser */}
         <div className="relative group flex justify-center lg:justify-end">
           <div className="absolute inset-0 bg-blue-400/10 dark:bg-blue-600/10 rounded-full blur-md group-hover:blur-lg transition-all duration-500 scale-95 group-hover:scale-100"></div>
           <img
