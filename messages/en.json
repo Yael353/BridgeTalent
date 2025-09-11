@@ -117,5 +117,16 @@
         "designation": "Founder, TechScout AB"
       }
     }
+  },
+  "LoginForm": {
+    "login": "Log in",
+    "directions": "Enter your details",
+    "email": "Email address",
+    "password": "Password",
+    "rememberMe": "Remember me",
+    "loginButton": "Log in",
+    "forgotPassword": "Forgot password?",
+    "noAccount": "Don't have an account yet?",
+    "signUp": "Sign up here"
   }
 }

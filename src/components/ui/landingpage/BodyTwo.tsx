@@ -5,7 +5,7 @@ function BodyTwo() {
 
   const t = useTranslations("BodyTwo");
   return (
-    <section className="h-screen py-24 px-8 bg-gradient-to-br from-purple-50 to-indigo-50 dark:from-gray-900 dark:to-indigo-900/20">
+    <section className="h-screen py-24 px-8 bg-gradient-to-br from-primary to-secondary/20">
       <div className="max-w-6xl mx-auto h-full grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
         {/* Text*/}
         <div className="space-y-6 text-center md:text-left">
@@ -15,7 +15,7 @@ function BodyTwo() {
               {t("h22")}
             </span>
           </h2>
-          <p className="text-xl md:text-2xl text-accant-foreground leading-relaxed font-semibold">
+          <p className="text-center md:text-left text-2xl md:text-3xl text-muted-foreground font-medium leading-relaxed max-w-2xl mx-auto md:mx-0">
             {t("p1")}
             <span className="font-semibold text-blue-600 dark:text-blue-400">
               {t("p2")}

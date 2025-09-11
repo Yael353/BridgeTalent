@@ -8,13 +8,13 @@ function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-gradient-to-br from-purple-50 to-indigo-50 dark:from-gray-900 dark:to-indigo-900/20 md:pt-34 pb-10 px-4">
+    <footer className="bg-gradient-to-r from-primary to-secondary/20 md:pt-34 pb-10 px-4">
       <div className="max-w-6xl mx-auto">
         {/* Huvudinnehåll */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-16">
           {/* Kolumn 1 */}
           <div className="space-y-5">
-            <h3 className="text-2xl font-bold text-indigo-700 dark:text-indigo-400">
+            <h3 className="text-2xl font-bold gradient-text">
               {t("companyName")}
             </h3>
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed">

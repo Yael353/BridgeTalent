@@ -49,7 +49,7 @@ function Testimonials() {
   ];
 
   return (
-    <div className="flex flex-col justify-between  items-center py-16 bg-gray-50 dark:bg-gray-900 min-h-screen mt-auto">
+    <div className="flex flex-col justify-between  items-center py-16 bg-gradient-to-r from-primary to-secondary/20 min-h-screen mt-auto">
       <div className="space-y-6 text-center mb-12 px-4">
         <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white leading-tight">
           {t("title")}{" "}
@@ -58,7 +58,7 @@ function Testimonials() {
           </span>
         </h2>
         <div>
-          <p className="text-xl md:text-2xl font-bold text-accent-foreground leading-relaxed ">
+          <p className="text-center  text-2xl md:text-3xl text-muted-foreground font-medium leading-relaxed max-w-4xl mx-auto md:mx-0">
             {t("subtitle")}{" "}
           </p>
         </div>

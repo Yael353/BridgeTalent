@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl";
 function Body() {
   const t = useTranslations("Body");
   return (
-    <section className="flex justify-center h-screen py-20 px-8 bg-gradient-to-br from-gray-50 to-blue-50 dark:from-gray-900 dark:to-blue-900/20">
+    <section className="flex justify-center h-screen py-20 px-8 bg-gradient-to-br from-primary to-secondary/20">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-32 items-center">
         {/* Bildsektion */}
         <div className="relative group flex justify-between ">
@@ -25,7 +25,7 @@ function Body() {
               {t("h22")}
             </span>
           </h2>
-          <p className="text-xl md:text-2xl font-semibold text-accent-foreground leading-relaxed">
+          <p className="text-center md:text-left text-2xl md:text-3xl text-muted-foreground font-medium leading-relaxed max-w-2xl mx-auto md:mx-0">
             {t("p1")}{" "}
           </p>
 
